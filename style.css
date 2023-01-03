@@ -1,0 +1,33 @@
+body {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 20% 80%;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.nav {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  background-color: royalblue;
+  color: white;
+}
+
+.header {
+  grid-column: 2;
+  grid-row: 1;
+  background-color: white;
+}
+
+.main {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: lightgray;
+}
