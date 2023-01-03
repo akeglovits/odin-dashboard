@@ -5,10 +5,11 @@
 body {
   display: grid;
   grid-template-columns: 20% 80%;
-  grid-template-rows: 20% 80%;
+  grid-template-rows: 25% 75%;
   padding: 0;
   margin: 0;
   height: 100vh;
+  background-color: lightgray;
 }
 
 ul {
@@ -34,12 +35,13 @@ ul {
   grid-column: 2;
   grid-row: 1;
   background-color: white;
+  box-shadow: 10px -4px 20px;
+  padding: 20px;
 }
 
 .main {
   grid-column: 2;
   grid-row: 2;
-  background-color: lightgray;
 }
 
 .nav img:not(.title-icon) {
@@ -63,4 +65,59 @@ ul {
 
 .communities-text {
   padding-bottom: 30px;
+}
+
+.top-bar {
+  display: grid;
+  grid-template-columns: 5% 70% 5% 10% 10%;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.bottom-bar {
+  display: grid;
+  grid-template-columns: 10% 60% repeat(3, 10%);
+  align-items: center;
+}
+
+.header .icon {
+  width: 24px;
+  justify-self: center;
+}
+
+.search-bar {
+  margin-right: 100px;
+  border: none;
+  background-color: lightgray;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.username {
+  justify-self: center;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  justify-self: center;
+}
+
+.greeting {
+  font-size: 12px;
+}
+.name {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header button {
+  border: none;
+  margin: 0 10px;
+  padding: 10px 0px;
+  border-radius: 24px;
+  background-color: royalblue;
+  color: white;
+  font-weight: 700;
 }
