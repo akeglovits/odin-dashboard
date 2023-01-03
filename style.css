@@ -5,7 +5,7 @@
 body {
   display: grid;
   grid-template-columns: 20% 80%;
-  grid-template-rows: 25% 75%;
+  grid-template-rows: 20% 80%;
   padding: 0;
   margin: 0;
   height: 100vh;
@@ -36,12 +36,17 @@ ul {
   grid-row: 1;
   background-color: white;
   box-shadow: 10px -4px 20px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .main {
   grid-column: 2;
   grid-row: 2;
+  display: grid;
+  grid-template-columns: 70% 25%;
+  grid-template-rows: min-content min-content min-content min-content;
+  gap: 5px 20px;
+  padding: 20px;
 }
 
 .nav img:not(.title-icon) {
@@ -120,4 +125,102 @@ ul {
   background-color: royalblue;
   color: white;
   font-weight: 700;
+}
+
+.project-header {
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.project-container {
+  grid-area: 2 / 1 / span 3 / span 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.announcement-header {
+  grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.announcement-container {
+  grid-area: 2 / 2 / span 1 / span 1;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px lightslategray;
+}
+
+.trending-header {
+  grid-area: 3 / 2 / span 1 / span 1;
+}
+
+.trending-container {
+  grid-area: 4 / 2 / span 1 / span 1;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px lightslategray;
+  display: grid;
+  grid-template-columns: 25% 70%;
+  padding: 10px;
+  gap-row: 10px;
+  align-items: center;
+}
+
+.project-card {
+  background-color: white;
+  border-left: 12px solid gold;
+  border-radius: 8px;
+  padding: 10px;
+  height: 120px;
+  display: grid;
+  grid-template-columns: 80% 10% 10%;
+  grid-template-rows: 15% 70% 15%;
+  box-shadow: 1px 1px 2px lightslategray;
+}
+
+.card-title {
+  grid-area: 1 / 1 / span 1 / span 3;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.card-content {
+  grid-area: 2 / 1 / span 1 / span 3;
+  font-size: 12px;
+}
+.card-icon {
+  width: 20px;
+  justify-self: flex-end;
+}
+
+.main-header {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.announcement {
+  padding: 10px 0;
+}
+
+.announcement-1,
+.announcement-2 {
+  border-bottom: 1px solid lightgray;
+}
+
+.announcement-title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.announcement-content {
+  font-size: 12px;
+}
+
+.trending-username {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.trending-subtitle {
+  font-size: 12px;
 }
